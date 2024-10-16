@@ -15,7 +15,7 @@ function Navbar() {
             <Link href="/">Logo here</Link>
             <ul className='flex items-center'>
               <li className='mx-3'><Link href="/" legacyBehavior><a>Search a job</a></Link></li>
-              <li className='mx-3'><Link href="/createResume" legacyBehavior><a>Create resume</a></Link></li>
+              <li className='mx-3'><Link href="/createresume" legacyBehavior><a>Create resume</a></Link></li>
               <li className='mx-3'><Link href="/history" legacyBehavior><a>Applicant history</a></Link></li>
               <li className='mx-3'><Link href="/login" legacyBehavior><a>Sign in</a></Link></li>
               <li className='mx-3'>

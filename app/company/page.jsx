@@ -31,7 +31,7 @@ function CompanyPage() {
             <div className='container mx-auto py-5 px-10'>
                 <div className='flex justify-between items-center'>
                     <h1 className='text-3xl font-bold'>Jobs board</h1>
-                    <Link href="/createPost" legacyBehavior>
+                    <Link href="/api/get-pet-info?petName=Fluffy" legacyBehavior>
                         <button className="createBtn">
                             <FontAwesomeIcon icon={faPlus} className="mr-2" />
                             Post a job
