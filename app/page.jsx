@@ -7,16 +7,16 @@ import Petinfo from './components/petinfo';
 import { NextResponse } from 'next/server';
 
 async function getPets(){
-  try{
-    const pets = await fetch('http://localhost:3000/api/get-pet-info');
-    const data = await pets.json();
-    return data;
-  } catch (error){
-      console.error(error);
-  }
+  // try{
+  //   const pets = await fetch('http://localhost:3000/api/get-pet-info');
+  //   const data = await pets.json();
+  //   return data;
+  // } catch (error){
+  //     console.error(error);
+  // }
 
-  // const pets = sql`SELECT * FROM Pets`
-  // return pets
+  const pets = sql`SELECT * FROM Pets`
+  return pets
 
 
 }
@@ -44,7 +44,7 @@ async function Home() {
 
         </div>
             {
-              pets.pets.map((pet) => {
+              pets.rows.map((pet) => {
                 return(
                   <Petinfo key={pet.name} name={pet.name} owner={pet.owner}/>
                 )})
