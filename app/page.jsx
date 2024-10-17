@@ -6,8 +6,6 @@ import { sql } from '@vercel/postgres';
 import Petinfo from './components/petinfo';
 import { NextResponse } from 'next/server';
 
-export const dynamic = 'force-dynamic'
-
 async function getPets(){
   try{
     const pets = await fetch('http://localhost:3000/api/get-pet-info', {cache: 'no-store'});
