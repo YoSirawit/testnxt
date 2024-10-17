@@ -41,7 +41,7 @@ async function Home() {
             <h3>Home</h3>
             <h1><Link href="/api/get-pet-info">Test</Link></h1>
             <Link href="/add-pet">Add pet</Link>
-            
+
         </div>
             {
               pets.pets.rows.map((pet) => {
