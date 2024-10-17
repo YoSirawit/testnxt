@@ -38,12 +38,12 @@ async function Home() {
 
         </div>
             {
-              
 
-              // pets.pets.rows.map((pet) => {
-              //   return(
-              //     <Petinfo key={pet.name} name={pet.name} owner={pet.owner}/>
-              //   )})
+
+              pets.pets.map((pet) => {
+                return(
+                  <Petinfo key={pet.name} name={pet.name} owner={pet.owner}/>
+                )})
 
             }
     </div>
