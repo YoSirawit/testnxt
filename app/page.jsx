@@ -22,7 +22,8 @@ async function Home() {
         <Navbar />
         <div className='container mx-auto'>
             <h3>Home</h3>
-            <h1><Link href="/api/get-pet-info?petName=Fluffy">Test</Link></h1>
+            <h1><Link href="/api/get-pet-info?">Test</Link></h1>
+            <Link href="/add-pet">Add pet</Link>
             {
               pets.rows.map((pet) => {
                 return(
