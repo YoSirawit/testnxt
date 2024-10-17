@@ -8,7 +8,7 @@ import { NextResponse } from 'next/server';
 
 async function getPets(){
   try{
-    const pets = await fetch('http://localhost:3000/api/get-pet-info', {cache: 'no-store'});
+    const pets = await fetch('testnxt-neon.vercel.app/api/get-pet-info', {cache: 'no-store'});
     const data = await pets.json();
     return data;
   } catch (error){
