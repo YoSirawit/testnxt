@@ -35,7 +35,7 @@ function removeall(){
 
 async function Home() {
 
-  let pets = await getPets();
+  const pets = await getPets();
   console.log({pets});
 
   // const pets = await getPets();
