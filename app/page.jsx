@@ -7,7 +7,7 @@ import Petinfo from './components/petinfo';
 import { NextResponse } from 'next/server';
 
 async function getPets(){
-    const pets = await sql`SELECT * FROM Pets;`
+    const pets = await sql`SELECT * FROM Pets`
     return pets;
 }
 
@@ -22,7 +22,7 @@ async function Home() {
         <Navbar />
         <div className='container mx-auto'>
             <h3>Home</h3>
-            <h1><Link href="/api/get-pet-info?">Test</Link></h1>
+            <h1><Link href="/api/get-pet-info">Test</Link></h1>
             <Link href="/add-pet">Add pet</Link>
             {
               pets.rows.map((pet) => {

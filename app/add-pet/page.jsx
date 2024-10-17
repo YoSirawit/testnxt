@@ -39,7 +39,7 @@ export default function AddPet(){
 
     return (
         <main className={styles.main}>
-            <Link href={'/'}>View Feed</Link>
+            <Link href={'/'}>Home</Link>
         <h1>Add Post</h1>
         <form onSubmit={handleSubmit}>
         <div>
