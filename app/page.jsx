@@ -10,7 +10,8 @@ async function getPets(){
   try{
     const pets = await fetch('http://localhost:3000/api/get-pet-info', {cache: 'no-store'});
     const data = await pets.json();
-    return data;
+    // console.log(data.pets);
+    return data.pets;
   } catch (error){
       console.error(error);
   }
@@ -39,11 +40,10 @@ async function Home() {
         </div>
             {
 
-
-              // pets.pets.map((pet) => {
-              //   return(
-              //     <Petinfo key={pet.name} name={pet.name} owner={pet.owner}/>
-              //   )})
+              pets.map((pet) => {
+                return(
+                  <Petinfo key={pet.name} name={pet.name} owner={pet.owner}/>
+                )})
 
             }
     </div>
