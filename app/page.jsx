@@ -8,7 +8,7 @@ import { NextResponse } from 'next/server';
 
 async function getPets(){
   try{
-    const pets = await fetch('testnxt-neon.vercel.app/api/get-pet-info');
+    const pets = await fetch('http://localhost:3000/api/get-pet-info');
     const data = await pets.json();
     return data;
   } catch (error){
@@ -44,7 +44,7 @@ async function Home() {
 
         </div>
             {
-              pets.pets.rows.map((pet) => {
+              pets.pets.map((pet) => {
                 return(
                   <Petinfo key={pet.name} name={pet.name} owner={pet.owner}/>
                 )})
