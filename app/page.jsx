@@ -38,8 +38,7 @@ async function Home() {
             <Link href="/add-pet">Add pet</Link>
 
         </div>
-            {
-
+            {pets &&
               pets.map((pet) => {
                 return(
                   <Petinfo key={pet.name} name={pet.name} owner={pet.owner}/>
