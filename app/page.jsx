@@ -40,10 +40,10 @@ async function Home() {
             {
 
 
-              pets.pets.map((pet) => {
-                return(
-                  <Petinfo key={pet.name} name={pet.name} owner={pet.owner}/>
-                )})
+              // pets.pets.map((pet) => {
+              //   return(
+              //     <Petinfo key={pet.name} name={pet.name} owner={pet.owner}/>
+              //   )})
 
             }
     </div>
